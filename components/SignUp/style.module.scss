@@ -1,0 +1,64 @@
+.SignUpSection{
+    max-width: 90%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FAECE3;
+    margin: 30px 0px;
+    padding: 20px 40px;
+    border-radius: 25px;
+    .formSection{
+        background: #E7E3E6;
+        border-radius: 20px;
+        padding: 30px 20px 20px;
+        flex-basis: 40%;
+        h1{
+            font-size: 50px;
+            font-weight: 600;
+            color: #353535;
+        }
+        h4{
+            font-size: 22px;
+            color: #808080;
+            font-weight: 400;
+        }
+        form{
+            margin-top: 35px;
+            width: 70%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+            .InputField{
+                width: 100%;
+                position: relative;
+                input{
+                    width:100%;
+                    padding: 16px 10px 16px 40px;
+                    font-size: 16px;
+                    font-weight: 400;
+                    border-radius: 20px;
+                    border: 1.75px solid #571F46;
+                    ::placeholder{
+                        color: #2b2b2b;
+                        opacity: 1;
+                    }
+                }
+                .Icon{
+                    position: absolute;
+                    left: 4%;
+                    top: 30%;
+                    font-size: 20px;
+                    color: #BDBDBD;
+                }
+            }
+            .SubmitBTN{
+                border-radius: 20px;
+                background-color: #571F46;
+                padding: 15px 0px;
+                color: white;
+                font-size: 16px;
+                font-weight: 600;
+            }
+        }
+    }
+}

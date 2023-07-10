@@ -1,0 +1,154 @@
+.ProfileData{
+    .ProfileImage{
+        position: relative;
+        width: 100%;
+        .profileBg{
+            width: 100%;
+            height: 500px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .prfilePic{
+            position: absolute;
+            bottom: -15%;
+            margin: auto;
+            left: 0;
+            right: 0;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            img{
+                border-radius: 50%;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+    .PersonalData{
+        display: flex;
+        padding: 60px 60px;
+        text-align: left;
+        width: 90%;
+        justify-content: space-between;
+        .Data{
+            flex-basis: 70%;
+            h1{
+                font-size: 3rem;
+                font-weight: 700;
+            }
+            .Voulumes{
+                display: flex;
+                justify-content: flex-start;
+                gap: 40px;
+                margin: 10px 0px 20px;
+                .volume{
+                    h3{
+                        color:#F69605;
+                        font-size: 30px;
+                        font-weight: 700;
+                    }
+                    h5{
+                        color: #5C5C5C;
+                        font-size: 18px;
+                        font-weight: 400;
+                    }
+                }
+            }
+            .Bio{
+                margin: 10px 0px 20px;
+                h3{
+                    font-family: 'Work Sans', sans-serif;
+                    font-size: 22px;
+                    font-weight: 700;
+                }
+                p{
+                    width: 60%;
+                    font-family: 'Work Sans', sans-serif;
+                    color: #8B8B8B;
+                    font-size: 18px;
+                }
+            }
+            .SocialShare{
+                color: #858584;
+                font-size: 22px;
+                .SocialIcons{
+                    display: flex;
+                    gap:20px;
+                }
+            }
+        }
+        .FollowSec{
+            display: flex;
+            gap: 30px;
+            .FollowBtn{
+                border: 2px solid #000000;
+                padding: 15px 40px;
+                height: fit-content;
+                border-radius: 20px;
+                display:flex;
+                gap: 10px;
+                align-items: center;
+                font-size: 16px;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.NFTSData{
+    .NFTtype{
+        background-color:#404040;
+        width: 100%;
+        .coverUp{
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            margin: auto;
+            padding: 0px 60px;
+            .Category{
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                gap:10px;
+                padding: 20px 0px;
+                font-size: 22px;
+                color: #858584;
+                font-weight: 600;
+                transition: 0.4s ease-in-out;
+                cursor: pointer;
+                .count{
+                    font-size: 14px;
+                    background-color:#3B3B3B;
+                    color: white;
+                    padding: 3px 7px;
+                    border-radius: 20px;
+                    font-weight: 400;
+                    transition: 0.4s ease-in-out;
+                }
+            }
+            .activeTab{
+                color: white;
+                border-bottom: 4px solid #858584;
+                transition: 0.4s ease-in-out;
+                .count{
+                    transition: 0.4s ease-in-out;
+                    background-color:#858584;
+                }
+            }
+        }
+    }
+    .Nfts{
+        width: 90%;
+        padding: 60px;
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-row-gap: 30px;
+        grid-column-gap: 20px;
+    }
+}
+

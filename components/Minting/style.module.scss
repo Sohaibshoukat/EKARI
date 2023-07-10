@@ -1,0 +1,221 @@
+.Heading {
+    position: relative;
+    background-color: #CF8270;
+    color: white;
+    border-radius: 40px;
+    width: 90%;
+    font-size: 4.5rem;
+    font-weight: 700;
+    padding: 40px 0px 60px;
+    margin-top: 10px;
+    .Img {
+        position: absolute;
+        bottom: -50%;
+        left: 0%;
+        right: 0%;
+    }
+}
+
+.MintingData {
+    margin-top: 40px;
+    display: flex;
+    max-width: 90%;
+    gap: 40px;
+    justify-content: space-between;
+
+    h3 {
+        font-size: 20px;
+        color: black;
+        font-weight: 700;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+
+    h4 {
+        font-size: 18px;
+        color: #68676E;
+        font-weight: 700;
+        margin-top: -5px;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+
+    .imgUpload {
+        .upload_btn {
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+            width: 100%;
+            .btn {
+                cursor: pointer;
+                border: 3px dotted #68676E;
+                color: #8B8B8B;
+                background-color: white;
+                padding: 50px 0px;
+                width: 100%;
+                border-radius: 8px;
+                font-size: 18px;
+                font-weight: 700;
+                .BrowseBtn{
+                    width: fit-content;
+                    margin: auto;
+                    background-color: #525252;
+                    margin-top: 10px;
+                    padding: 10px 30px;
+                    font-size: 16px;
+                    color: white;
+                    font-weight: 500;
+                    border-radius: 20px;
+                }
+            }
+
+            input[type=file] {
+                font-size: 100px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                opacity: 0;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .NFTupload {
+        width: 100%;
+        flex-basis: 75%;
+
+        .FormSelection {
+            margin: 25px 0px 10px;
+
+            .MethodList {
+                display: flex;
+                justify-content: flex-start;
+                gap: 30px;
+
+                .Method {
+                    font-size: 16px;
+                    font-weight: 700;
+                    border: 0.5px solid #353535;
+                    color: #68676E;
+                    padding: 40px;
+                    border-radius: 12px;
+
+                    .Tag {
+                        color: #626168;
+                        width: 50px;
+                        height: 50px;
+                        margin-bottom: 10px;
+                    }
+                }
+
+                .ActiveMethod {
+                    border: 0.5px solid #FF343F;
+
+                    .Tag {
+                        color: #FF343F;
+                    }
+                }
+            }
+
+            .PurchaseBox {
+                border: 0.5px solid #353535;
+                border-radius: 10px;
+                padding: 25px 15px;
+                display: flex;
+                justify-content: space-between;
+                margin: 20px 0px;
+
+                .PurchaseText {
+                    .LockText {
+                        display: flex;
+                        gap: 15px;
+                        align-items: center;
+
+                        .lock {
+                            width: 25px;
+                            height: 25px;
+                            color: #FF343F;
+                        }
+
+                        h3 {
+                            margin-bottom: 0px;
+                        }
+                    }
+
+                    h4 {
+                        font-size: 16px;
+                        color: #68676E;
+                        font-weight: 700;
+                        margin-top: 5px;
+                    }
+                }
+            }
+
+            .PriceInput {
+                .unlockBtn {
+                    .switch {
+                        background-color: #e5e5e5;
+                        width: 60px;
+                        height: 30px;
+                        padding: 3px 2px;
+                        border-radius: 15px;
+
+                        .Switchbtn {
+                            height: 25px;
+                            width: 25px;
+                            border-radius: 50%;
+                            background-color: #c9c9c9;
+                            float: left;
+                            transition: ease;
+                        }
+
+                        .SwitchOn {
+                            background-color: #571F46;
+                            float: right;
+                            transition: ease;
+                        }
+                    }
+                }
+            }
+        }
+
+        input {
+            border: 0.5px solid #353535;
+            border-radius: 10px;
+            width: 100%;
+            padding: 15px;
+        }
+
+        input::placeholder {
+            color: #68676E;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .selection {
+            border: 0.5px solid #353535;
+            width: 100%;
+            border-radius: 10px;
+            padding: 15px;
+            color: #68676E;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .btn {
+            border-radius: 20px;
+            background-color: #571F46;
+            color: white;
+            padding: 10px 30px;
+            width: fit-content;
+            float: left;
+            font-weight: 600;
+            font-size: 18px;
+            margin: 30px 0px;
+        }
+    }
+
+    .NFTprview {
+        flex-basis: 23%;
+    }
+}

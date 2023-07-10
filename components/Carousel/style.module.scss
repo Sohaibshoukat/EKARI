@@ -1,0 +1,66 @@
+@import "../../styles/mixin.scss";
+
+.container {
+    max-width: 90%;
+}
+
+.carousel {
+    position: relative;
+    margin-bottom: 50px;
+
+    .head {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 10px;
+        .carouselTitle {
+            font-size: 42px;
+            color: #000000;
+            font-weight: 700;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        .Arrows {
+            float: right;
+            display: flex;
+            gap: 10px;
+            .arrow {
+                font-size: 50px;
+                color: #571F46;
+                border-radius: 50%;
+                cursor: pointer;
+                z-index: 1;
+                transition: 0.2s ease-in-out;
+                border: 2px solid #571F46;
+                padding: 10px;
+                @include md {
+                    display: block;
+                }
+
+                &:hover {
+                    color: white;
+                    background-color: #571F46;
+                }
+            }
+
+            .carouselLeftNav {
+                right: 7%;
+            }
+        }
+    }
+
+    .carouselItems {
+        display: flex;
+        gap: 10px;
+        overflow-y: hidden;
+        margin-right: -20px;
+        margin-left: -20px;
+        padding: 5px 20px;
+
+        @include md {
+            gap: 20px;
+            overflow: hidden;
+            margin: 0;
+            padding: 10px 0px;
+        }
+    }
+}

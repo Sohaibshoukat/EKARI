@@ -1,0 +1,51 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    padding: 20px 30px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 25%;
+}
+.logo {
+    margin: 2%;
+    border-radius: 50%;
+}
+.LogoText {
+    font-size: 24px;
+    color: #353535;
+    font-weight: 700;
+    margin-left: 3%;
+}
+.LogoText:hover {
+    color: rgba(82, 76, 79);
+}
+
+.NavBarLinks {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+}
+
+.NavBarLinks a {
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    padding: 0px 10px;
+}
+
+.connectionButton{
+    background-color: #571F46;
+    padding:8px 15px 8px 15px;
+    color: white;
+}
